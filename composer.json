@@ -1,0 +1,14 @@
+{
+    "name": "root/tennis",
+    "authors": [
+        {
+            "name": "Marc",
+            "email": "mcalafellsmx@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+        }
+    }
+}
