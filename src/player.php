@@ -15,15 +15,15 @@ class Player {
         $this->name = $name;
     }
 
-    public function getScore()
+    public function score()
     {
         return $this->score;
     }
 
 
-    public function setScore($score)
+    public function win_point()
     {
-        $this->score = $score;
+        $this->score = 15;
     }
 
 
