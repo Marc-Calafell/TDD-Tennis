@@ -57,11 +57,82 @@ class TennisSpec extends ObjectBehavior
 
     }
 
-
     function it_score_15_15(){
         $this->player1->winpoint();
         $this->player2->winpoint();
 
     }
+
+    function it_score_30_15(){
+        $this->player1->winpoint();
+        $this->player1->winpoint();
+
+        $this->player2->winpoint();
+
+    }
+    function it_score_15_30(){
+        $this->player1->winpoint();
+
+        $this->player2->winpoint();
+        $this->player2->winpoint();
+    }
+
+    function it_score_30_30(){
+        $this->player1->winpoint();
+        $this->player1->winpoint();
+
+        $this->player2->winpoint();
+        $this->player2->winpoint();
+    }
+
+    function it_score_40_15(){
+        $this->player1->winpoint();
+        $this->player1->winpoint();
+        $this->player1->winpoint();
+
+        $this->player2->winpoint();
+
+    }
+    function it_score_15_40(){
+        $this->player1->winpoint();
+
+        $this->player2->winpoint();
+        $this->player2->winpoint();
+        $this->player2->winpoint();
+
+    }
+
+    function it_score_40_30(){
+        $this->player1->winpoint();
+        $this->player1->winpoint();
+        $this->player1->winpoint();
+
+        $this->player2->winpoint();
+        $this->player2->winpoint();
+
+    }
+    function it_score_30_40(){
+        $this->player1->winpoint();
+        $this->player1->winpoint();
+
+        $this->player2->winpoint();
+        $this->player2->winpoint();
+        $this->player2->winpoint();
+
+    }
+
+    function it_score_40_40(){
+        $this->player1->winpoint();
+        $this->player1->winpoint();
+        $this->player1->winpoint();
+
+        $this->player2->winpoint();
+        $this->player2->winpoint();
+        $this->player2->winpoint();
+
+    }
+
+
+
 
 }
