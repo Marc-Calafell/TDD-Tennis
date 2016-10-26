@@ -6,7 +6,10 @@
             "email": "mcalafellsmx@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "phpsec/phpsec": "^0.6.5",
+        "phpspec/phpspec": "^3.1"
+    },
     "autoload": {
         "psr-4": {
         }
