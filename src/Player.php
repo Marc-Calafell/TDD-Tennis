@@ -1,43 +1,34 @@
 <?php
 
 class Player {
-        protected $score;
-        protected $name;
 
+    protected $code = [
+        0 => "0",
+        1 => "15",
+        2 => "30",
+        3 => "40"
+    ];
+    protected $points;
+    protected $name;
     /**
      * Player constructor.
      * @param $score
      * @param $name
      */
-    public function __construct($score, $name)
-    {
-        $this->score = $score;
+    public function __construct($points, $name) {
+        $this->points = $points;
         $this->name = $name;
     }
-
-    public function score()
-    {
-        return $this->score;
+    public function winpoint() {
+        $this->points += 1;
     }
-
-
-    public function win_point()
-    {
-        $this->score = 15;
+    public function points() {
+        return $this->points;
     }
-
-
-    public function getName()
-    {
+    public function score() {
+        return $this->code[$this->points];
+    }
+    public function name() {
         return $this->name;
     }
-
-
-    public function setName($name)
-    {
-        $this->name = $name;
-    }
-
-
-
 }
